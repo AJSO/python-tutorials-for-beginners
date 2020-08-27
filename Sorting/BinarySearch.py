@@ -2,7 +2,11 @@
 # determine whether or not the item we're looking for is in the sequence.
 # Takes the mid-point as the starting point for the search.
 # if Search < Mid-point = check Left
-# if Search == Mid-point = return Position
+# if Search == Mid-point = return Position#
+# binary search complexity: nx1/2x1/2x1/2 = n/2^k
+# where n = len(sequence) 
+#       k = number of steps
+
 def BinarySearch(sequence, item):
     # we need to know the beginning and the end of the sequence
     begin_index = 0 #first element
